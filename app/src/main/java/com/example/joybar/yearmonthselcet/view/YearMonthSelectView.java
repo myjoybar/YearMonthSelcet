@@ -70,6 +70,9 @@ public class YearMonthSelectView extends LinearLayout {
 		mMonthPicker.setMinValue(1);
 		mMonthPicker.setValue(mMomth);
 
+		mYearPicker.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
+		mMonthPicker.setDescendantFocusability(NumberPicker.FOCUS_BLOCK_DESCENDANTS);
+
 		mYearPicker.setOnValueChangedListener(new OnValueChangeListener() {
 
 			@Override
